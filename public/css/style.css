@@ -3,7 +3,7 @@
 	/* color has to changed just cheking and fixing bug */
 	--primary-color : orange;
 }
-
+/* navbar starting */
 body {
 	 display: flex;
 	 justify-content: center;
@@ -234,4 +234,4 @@ body {
 	 height: 250px;
 	 transform: translateY(102%);
 }
- 
+ /* navbar ending */
