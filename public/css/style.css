@@ -346,3 +346,29 @@ header {
     padding: 60px;
   }
 }
+
+/* course section */
+#course{
+  background-color: orange;
+  color :white;
+  margin-top: 4rem;
+}
+
+#course h2{
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  text-decoration: underline;
+ 
+}
+#course h3{
+  color:white;
+}
+#course img{
+  border: 35px solid white;
+  border-radius: 33px;
+}
+#cont{
+  margin-left: 50px;
+  border: 1px solid white;
+}
