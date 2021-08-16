@@ -10,9 +10,9 @@
 }
 /* navbar starting */
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   min-height: 100vh;
   margin: 0;
   font-family: Lora, sans-serif;
@@ -271,6 +271,7 @@ header {
   color: var(--primary-color);
   font-size: 4rem;
   padding-bottom: 2rem;
+  padding-top: 7rem;
 }
 #pic {
   flex: 1;
@@ -278,3 +279,27 @@ header {
   margin-left: 100px;
   width: 50%;
 }
+
+/* about us section */
+.about-section {
+  font-family: Lora, sans-serif;
+  margin-top: 8rem;
+  
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+
+  
+}
+
+
+.about-section h1{
+  color: orange;
+  margin-bottom: 2rem;
+  
+  
+}
+
+
+
+
