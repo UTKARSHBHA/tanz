@@ -333,6 +333,8 @@ header {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 900;
+  color: orange;
+  text-decoration: underline;
 }
 
 .text{
@@ -370,3 +372,4 @@ header {
 }
 
 
+/* courses section */
