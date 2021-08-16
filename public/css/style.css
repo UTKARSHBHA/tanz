@@ -258,7 +258,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.container {
+.contain {
   margin: 0 10%;
 }
 header {
@@ -286,7 +286,7 @@ header {
   padding-bottom: 2rem;
   padding-top: 7rem;
 }
-#pic {
+#pict {
   flex: 1;
   margin-top: 100px;
   margin-left: 100px;
@@ -370,7 +370,7 @@ header {
 }
 
 #course h2{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   color: white;
   text-decoration: underline;
@@ -378,12 +378,19 @@ header {
 }
 #course h3{
   color:white;
+  font-size: 30px;
+  font-weight: 400;
 }
 #course img{
   border: 35px solid white;
   border-radius: 33px;
 }
 #cont{
-  margin-left: 50px;
+  margin-left: 20px;
   border: 1px solid white;
+}
+#cont-right{
+  margin-right: 20px;
+  border: 1px solid white;
+
 }
