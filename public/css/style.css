@@ -11,6 +11,7 @@
 /* navbar starting */
 body {
   /* display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; */
   min-height: 100vh;
@@ -251,6 +252,7 @@ header {
   padding: 10%;
 }
 header {
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -300,9 +302,7 @@ header {
   
 } */
 
-
-
-.about-section{
+.about-section {
   background: url(/public/img/about-bg.jpg) no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
@@ -310,18 +310,16 @@ header {
   padding: 100px 0;
   margin-top: 4rem;
 
-  
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
 
-  
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
-.inner-container{
+.inner-container {
   width: 50%;
   float: right;
   background-color: #fdfdfd;
@@ -329,7 +327,7 @@ header {
   margin-left: 25rem;
 }
 
-.inner-container h1{
+.inner-container h1 {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 900;
@@ -337,7 +335,7 @@ header {
   text-decoration: underline;
 }
 
-.text{
+.text {
   font-size: 13px;
   color: #545454;
   line-height: 30px;
@@ -345,31 +343,29 @@ header {
   margin-bottom: 40px;
 }
 
-
-@media screen and (max-width:1200px){
-  .inner-container{
-      padding: 80px;
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
   }
 }
 
-@media screen and (max-width:1000px){
-  .about-section{
-      background-size: 100%;
-      padding: 100px 40px;
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
   }
-  .inner-container{
-      width: 100%;
-  }
-}
-
-@media screen and (max-width:600px){
-  .about-section{
-      padding: 0;
-  }
-  .inner-container{
-      padding: 60px;
+  .inner-container {
+    width: 100%;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
+}
 
 /* courses section */
