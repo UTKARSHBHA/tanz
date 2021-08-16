@@ -282,7 +282,7 @@ header {
 
 /* about starting */
 .about-section {
-  background: url(/public/img/about-bg.jpg) no-repeat left;
+  background: url(../img/about-bg.jpg) no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
