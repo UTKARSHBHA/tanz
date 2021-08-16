@@ -294,8 +294,8 @@ header {
 /* width: 50%; */
 /* } */
 .header-pic {
-  width: 50%;
   flex: 1;
+  /* width: 50%; */
 }
 /* about starting */
 .about-section {
@@ -307,7 +307,7 @@ header {
   overflow: hidden;
   padding: 100px 0;
   /* margin-top: 4rem; */
-
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,26 +367,142 @@ header {
 }
 
 /* course section */
-#course {
+#courses {
   background-color: orange;
   color: white;
-  margin-top: 4rem;
+
+  margin: 0 10%;
 }
 
-#course h2 {
-  font-size: 30px;
+#courses h2 {
+  font-size: 50px;
   font-weight: 900;
   color: white;
   text-decoration: underline;
 }
-#course h3 {
+#courses h3 {
   color: white;
+  font-size: 30px;
+  font-weight: 400;
 }
-#course img {
+#courses img {
   border: 35px solid white;
   border-radius: 33px;
 }
 #cont {
   margin-left: 50px;
   border: 1px solid white;
+}
+#cont-right {
+  margin-right: 50px;
+  border: 1px solid white;
+}
+
+/* Gallary started */
+
+.gallary {
+  padding: 1rem;
+}
+.gallary .img-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+}
+.gallary .img-grid .img-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--primary-color);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.gallary .img-grid .img-box .img-timg {
+  width: 100%;
+  height: calc(100% + 1rem);
+  object-fit: cover;
+}
+.gallary .img-grid .img-box .img-timg:hover {
+  cursor: pointer;
+}
+.gallary .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 3rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
+.gallary .modal .close,
+.gallary .modal .previous,
+.gallary .modal .next {
+  position: absolute;
+  color: gray;
+  opacity: 0.7;
+  user-select: none;
+}
+.gallary .modal .close:hover,
+.gallary .modal .previous:hover,
+.gallary .modal .next:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 200ms ease-in;
+}
+.gallary .modal .close {
+  font-size: 3rem;
+  font-weight: bold;
+  top: 1rem;
+  left: 2rem;
+}
+.gallary .modal .previous {
+  font-size: 4rem;
+  top: 37%;
+  left: 2rem;
+}
+.gallary .modal .next {
+  font-size: 4rem;
+  top: 37%;
+  right: 2rem;
+}
+.gallary .modal .modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: 80%;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+.gallary .modal .caption {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: gray;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .gallary .modal .previous,
+  .gallary .modal .next {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .gallary {
+    padding: 0;
+  }
+  .gallary .modal .modal-content {
+    width: 96%;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+.secondaryHeader {
+  font-size: 3.5rem;
+  margin: 4rem 0;
+  color: var(--primary-color);
 }
