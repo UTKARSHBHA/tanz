@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 :root {
   /* color has to changed just cheking and fixing bug */
-  --primary-color: orange;
+  --primary-color: #ff7b00;
+  --primary-color-darker: #ff8800;
 }
 * {
   margin: 0%;
@@ -9,15 +10,16 @@
   box-sizing: border-box;
 }
 /* navbar starting */
-body {
-  /* display: flex;
-  flex-direction: column;
+/* body { */
+/* display: flex;
+
   justify-content: center;
   align-items: center; */
-  min-height: 100vh;
-  margin: 0;
-  font-family: Lora, sans-serif;
-}
+/* min-height: 100vh;
+margin: 0;
+font-family: Lora, sans-serif;
+*/
+/* } */
 
 #burger-toggle {
   position: absolute;
@@ -118,11 +120,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1a1e23;
+  background: #ffaa00;
   opacity: 0;
   overflow-x: hidden;
   visibility: hidden;
   transition: 0.3s;
+  padding: 0 10%;
 }
 @media screen and (max-width: 750px) {
   .menu {
@@ -192,6 +195,8 @@ body {
 .menu .images {
   margin-top: 36px;
   display: flex;
+  justify-content: center;
+
   flex-wrap: wrap;
 }
 @media screen and (max-width: 750px) {
@@ -201,7 +206,7 @@ body {
 }
 .menu .images .image-link {
   width: 15vw;
-  margin: 0 12px;
+  margin: 12px;
   overflow: hidden;
 }
 @media screen and (max-width: 750px) {
@@ -214,6 +219,11 @@ body {
   position: relative;
   transition: 0.6s;
 }
+/* .image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
 .menu .images .image-link .image::before {
   position: absolute;
   content: attr(data-label);
@@ -249,7 +259,7 @@ header {
   align-items: center;
 }
 .container {
-  padding: 10%;
+  margin: 0 10%;
 }
 header {
   width: 100vw;
@@ -266,12 +276,13 @@ header {
   /* padding: 0px 106px; */
 }
 #heading p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 25px 0;
+  line-height: 2rem;
 }
 #heading h1 {
   color: var(--primary-color);
-  font-size: 4rem;
+  font-size: 3.8rem;
   padding-bottom: 2rem;
   padding-top: 7rem;
 }
@@ -282,33 +293,16 @@ header {
   width: 50%;
 }
 
-/* about us section */
-/* .about-section {
-  font-family: Lora, sans-serif;
-  margin-top: 8rem;
-  
-  box-sizing: border-box;
-  padding: 50px;
-  text-align: center;
-
-  
-}
-
-
-.about-section h1{
-  color: orange;
-  margin-bottom: 2rem;
-  
-  
-} */
-
+/* about starting */
 .about-section {
-  background: url(/public/img/about-bg.jpg) no-repeat left;
-  background-size: 55%;
+  height: 100vh;
+  background: url(../img/about-bg.jpg) no-repeat left;
+
+  background-size: 50%;
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 0;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 
   display: flex;
   align-items: center;
@@ -327,16 +321,16 @@ header {
   margin-left: 25rem;
 }
 
-.inner-container h1 {
+.inner-container h2 {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900;
-  color: orange;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 16px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
@@ -367,5 +361,3 @@ header {
     padding: 60px;
   }
 }
-
-/* courses section */
