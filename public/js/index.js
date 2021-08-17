@@ -72,3 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// navbar
+const navLink = document.querySelectorAll(".menu-nav-item");
+const imageLink = document.querySelectorAll(".image-link");
+for (let i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener("click", () => {
+        document.getElementById('burger-toggle').click();
+
+    });
+}
+for (let i = 0; i < imageLink.length; i++) {
+    imageLink[i].addEventListener("click", () => {
+        document.getElementById('burger-toggle').click();
+
+    });
+}
