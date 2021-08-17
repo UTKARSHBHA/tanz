@@ -152,6 +152,7 @@ font-family: Lora, sans-serif;
   position: relative;
   display: inline-flex;
   font-size: 2rem;
+  margin-top: 9rem;
   color: white;
   text-decoration: none;
 }
@@ -193,7 +194,7 @@ font-family: Lora, sans-serif;
   transform: translateY(102%);
 }
 .menu .images {
-  margin-top: 36px;
+  /* margin-top: 36px; */
   display: flex;
   justify-content: center;
   /* object-fit: contain; */
@@ -206,7 +207,7 @@ font-family: Lora, sans-serif;
 }
 .menu .images .image-link {
   width: 15vw;
-  height: 15vw;
+  /* height: 15vw; */
   margin: 12px;
   overflow: hidden;
 }
@@ -249,6 +250,8 @@ font-family: Lora, sans-serif;
 }
 .menu .images img {
   height: 250px;
+  width: auto;
+  object-fit: cover;
   transform: translateY(102%);
 }
 /* navbar ending */
@@ -380,31 +383,41 @@ header {
 
   margin: 0 10%;
 }
+#courses p {
+  padding: 0;
+  margin: 0;
+}
 
 #courses h2 {
   font-size: 50px;
   font-weight: 900;
   color: white;
   text-decoration: underline;
+  padding-left: 2rem;
 }
 #courses h3 {
+  padding-bottom: 5px;
   color: white;
   font-size: 30px;
   font-weight: 400;
 }
 #courses img {
-  border: 35px solid white;
+  border: 15px solid white;
   border-radius: 33px;
 }
 #cont {
   margin-left: 50px;
+  padding: 2rem;
   border: 1px solid white;
 }
 #cont-right {
   margin-right: 50px;
+  padding: 2rem;
   border: 1px solid white;
 }
-
+.mybox {
+  border-bottom: 1px solid #ff7b00;
+}
 /* Gallary started */
 
 .gallary {
@@ -510,7 +523,7 @@ header {
 }
 .secondaryHeader {
   font-size: 3.5rem;
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
   color: var(--primary-color);
 }
 @media screen and (max-width: 600px) {
@@ -521,4 +534,360 @@ header {
     margin-left: 50px;
     margin-bottom: 50px;
   }
+}
+
+/* contact us */
+
+/*---------------------------------------------*/
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  font-family: Helvetica Neue, "Montserrat", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+input:-moz-placeholder {
+  color: #bdbdd3;
+}
+input::-moz-placeholder {
+  color: #bdbdd3;
+}
+input:-ms-input-placeholder {
+  color: #bdbdd3;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+textarea:-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea::-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea:-ms-input-placeholder {
+  color: #bdbdd3;
+}
+
+/*==================================================================
+[ Contact - Area]*/
+
+.container-contact {
+  width: 100%;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: transparent;
+}
+
+.wrap-contact {
+  width: 700px;
+  background: transparent;
+  border: 1px solid #b3b3b3;
+  padding: 40px 0px 20px 0px;
+}
+
+.wrap-contact-image {
+  width: 600px;
+  background: transparent;
+  padding: 40px 0px 20px 0px;
+}
+
+/*==================================================================
+[ Contact - Form ]*/
+
+.contact-form {
+  width: 100%;
+}
+
+.error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+}
+
+.success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input {
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 31px;
+  color: #8f8fa1;
+  line-height: 1.2;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: none;
+}
+
+/*---------------------------------------------*/
+
+input.input {
+  height: 62px;
+  padding: 0 15px 0 15px;
+}
+
+textarea.input {
+  min-height: 169px;
+  padding: 19px 15px 0 15px;
+}
+
+/*------------------------------------------------------------------
+[ Focus Input ]*/
+
+.focus-input {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus + .focus-input100 {
+  width: calc(100% + 20px);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 7px;
+  background-color: #9e8c7b;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-btn:hover:before {
+  background-color: #916439;
+}
+
+.validate-input {
+  position: relative;
+}
+
+/* Contact us start */
+.message {
+  /* height: 100vh; */
+  background-color: #f7f7f7;
+  background-image: url(assets/pics/white-painted-wall-1939485.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  padding: 182px;
+}
+.message a {
+  color: #4d4d4d;
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.message i {
+  transition: all 0.3s ease-in-out;
+  color: #4d4d4d;
+}
+i {
+  padding: 5px;
+  border: 1px solid #4d4d4d;
+  border-radius: 100%;
+}
+.con-info:hover a {
+  color: var(--primary-color);
+}
+.con-info:hover i {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.message .message-text {
+  padding: 40px;
+  flex-basis: 50%;
+}
+.message .message-form {
+  flex-basis: 50%;
+}
+
+.fbtn {
+  /* padding: 20px; */
+  margin: 15px;
+  width: 80%;
+}
+.form-el {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.message .message-form .form-el {
+  padding: 20px;
+  margin: 15px;
+  width: 80%;
+}
+::placeholder {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+}
+.sub {
+  background-color: #737373;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+}
+.con-info {
+  padding: 20px;
+}
+
+/* button starting */
+.btn {
+  margin: 20px;
+}
+.btn-one {
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 1.5px solid var(--primary-color);
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-one:hover {
+  background: #ff7b00a6;
+}
+.btn-one:hover span {
+  color: white;
+}
+/* .btn-one:hover svg {
+  stroke-dashoffset: -480;
+} */
+
+.btn-one span {
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fbtn {
+  /* padding: 20px; */
+  margin: 15px;
+  width: 80%;
 }
