@@ -196,7 +196,7 @@ font-family: Lora, sans-serif;
   margin-top: 36px;
   display: flex;
   justify-content: center;
-
+  /* object-fit: contain; */
   flex-wrap: wrap;
 }
 @media screen and (max-width: 750px) {
@@ -206,6 +206,7 @@ font-family: Lora, sans-serif;
 }
 .menu .images .image-link {
   width: 15vw;
+  height: 15vw;
   margin: 12px;
   overflow: hidden;
 }
@@ -299,80 +300,77 @@ header {
 }
 /* about starting */
 
-
-#about{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
+#about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
 }
 
-.about-section{
-    background: url(../img/about-bg.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
+.about-section {
+  background: url(../img/about-bg.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
 }
 
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
 }
 
-.inner-container h2{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-    color: orange;
+.inner-container h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: orange;
 }
 
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
 }
 
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
 }
 
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .myContainer{
-      margin: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
-
-    
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .myContainer {
+    margin: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
 }
 
 /* course section */
@@ -515,15 +513,12 @@ header {
   margin: 4rem 0;
   color: var(--primary-color);
 }
-@media screen and (max-width:600px){
-  
-  #cont{
+@media screen and (max-width: 600px) {
+  #cont {
     margin-right: 45px;
   }
-#cont-right{
-  margin-left: 50px;
-  margin-bottom: 50px;
-
-}
-
+  #cont-right {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
 }

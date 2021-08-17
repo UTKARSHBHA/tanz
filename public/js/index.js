@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closeModal = () => {
         modal.style.display = 'none';
+        document.querySelector(".burger-menu").style.display = "block";
+
     }
 
     const displayImg = () => {
