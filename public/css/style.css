@@ -298,72 +298,81 @@ header {
   flex: 1;
 }
 /* about starting */
-.about-section {
-  height: 100vh;
-  background: url(../img/about-bg.jpg) no-repeat left;
 
-  background-size: 50%;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  padding: 100px 0;
-  /* margin-top: 4rem; */
-  margin-bottom: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: whitesmoke;
 
-  font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
+#about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
 }
 
-.inner-container {
-  width: 50%;
-  float: right;
-  background-color: #fdfdfd;
-  padding: 100px;
-  margin-left: 25rem;
+.about-section{
+    background: url(../img/about-bg.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
 }
 
-.inner-container h2 {
-  margin-bottom: 30px;
-  font-size: 35px;
-  font-weight: 900;
-  color: var(--primary-color);
-  text-decoration: underline;
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
 }
 
-.text {
-  font-size: 16px;
-  color: #545454;
-  line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
+.inner-container h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: orange;
 }
 
-@media screen and (max-width: 1200px) {
-  .inner-container {
-    padding: 80px;
-  }
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1000px) {
-  .about-section {
-    background-size: 100%;
-    padding: 100px 40px;
-  }
-  .inner-container {
-    width: 100%;
-  }
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
 }
 
-@media screen and (max-width: 600px) {
-  .about-section {
-    padding: 0;
-  }
-  .inner-container {
-    padding: 60px;
-  }
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .myContainer{
+      margin: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+
+    
 }
 
 /* course section */
@@ -398,4 +407,16 @@ header {
     margin-right: 50px;
     border: 1px solid white;
   
+}
+@media screen and (max-width:600px){
+  
+  #cont{
+    margin-right: 45px;
+  }
+#cont-right{
+  margin-left: 50px;
+  margin-bottom: 50px;
+
+}
+
 }
