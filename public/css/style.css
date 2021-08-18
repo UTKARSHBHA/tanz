@@ -800,13 +800,13 @@ textarea.input {
 .message {
   /* height: 100vh; */
   background-color: #f7f7f7;
-  background-image: url(assets/pics/white-painted-wall-1939485.jpg);
+  /* background-image: url(assets/pics/white-painted-wall-1939485.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  /* height: 100vh; */
   display: flex;
-  padding: 182px;
+  padding: 10% 0;
 }
 .message a {
   color: #4d4d4d;
@@ -943,3 +943,106 @@ textarea.input {
 }
 
 /* Bugging */
+
+@media screen and (max-width: 1300px) {
+  li,
+  a,
+  button {
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+
+  .btn {
+    margin: 15px;
+  }
+  .btn-one {
+    width: 150px;
+    height: 40px;
+  }
+
+  .btn-one span {
+    font-size: 15px;
+  }
+
+  .message .btn-one {
+    width: 80%;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+  .message .message-text {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  li,
+  a,
+  button {
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+  }
+
+  .btn {
+    margin: 12px;
+  }
+  .btn-one {
+    width: 120px;
+    height: 35px;
+  }
+
+  .btn-one span {
+    font-size: 12px;
+  }
+
+  .message .btn-one {
+    width: 80%;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+  .message .message-text {
+    padding: 0px;
+    /* flex-basis: 50%; */
+  }
+}
+@media screen and (max-width: 800px) {
+  li,
+  a,
+  button {
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+  }
+
+  .btn {
+    margin: 12px;
+  }
+  .btn-one {
+    width: 120px;
+    height: 35px;
+  }
+
+  .btn-one span {
+    font-size: 12px;
+  }
+
+  .message .btn-one {
+    width: 80%;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+  .message .message-text {
+    padding: 0px;
+    /* flex-basis: 50%; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .message {
+    flex-direction: column;
+  }
+}
