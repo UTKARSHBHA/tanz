@@ -37,6 +37,10 @@
   }
   
   @media screen and (max-width: 600px) {
+    body{
+      margin: 0;
+      padding: 0;
+    }
     .about-section {
       padding: 0;
     }
@@ -45,6 +49,22 @@
     }
     .inner-container {
       padding: 60px;
+    }
+    header{
+      flex-direction: column;
+    }
+    #courses img{
+      border: 6px solid white;
+    }
+
+    #pic{
+      width:50vw;
+      height: 50vh;
+      
+    }
+    #heading{
+      padding-top: 19rem;
+      margin: 0 10%;
     }
   }
 
@@ -75,3 +95,121 @@
         font-size: 50%;
         }
       }   
+
+      @media (max-width: 500px) {
+        html {
+          font-size: 50%;
+        }
+      }
+      
+      @media (min-width: 501px) and (max-width: 768px) {
+        html {
+          font-size: 50%;
+        }
+      }
+      
+      /* Bugging */
+      
+      @media screen and (max-width: 1300px) {
+        li,
+        a,
+        button {
+          font-size: 1rem;
+          /* font-weight: bold; */
+        }
+      
+        .btn {
+          margin: 15px;
+        }
+        .btn-one {
+          width: 150px;
+          height: 40px;
+        }
+      
+        .btn-one span {
+          font-size: 15px;
+        }
+      
+        .message .btn-one {
+          width: 80%;
+        }
+      
+        ::placeholder {
+          font-size: 1rem;
+        }
+        .message .message-text {
+          padding: 0px;
+        }
+      }
+      
+      @media screen and (max-width: 1000px) {
+        li,
+        a,
+        button {
+          font-size: 0.8rem;
+          /* font-weight: bold; */
+        }
+      
+        .btn {
+          margin: 12px;
+        }
+        .btn-one {
+          width: 120px;
+          height: 35px;
+        }
+      
+        .btn-one span {
+          font-size: 12px;
+        }
+      
+        .message .btn-one {
+          width: 80%;
+        }
+      
+        ::placeholder {
+          font-size: 0.8rem;
+        }
+        .message .message-text {
+          padding: 0px;
+          /* flex-basis: 50%; */
+        }
+      }
+      @media screen and (max-width: 800px) {
+        li,
+        a,
+        button {
+          font-size: 0.8rem;
+          /* font-weight: bold; */
+        }
+      
+        .btn {
+          margin: 12px;
+        }
+        .btn-one {
+          width: 120px;
+          height: 35px;
+        }
+      
+        .btn-one span {
+          font-size: 12px;
+        }
+      
+        .message .btn-one {
+          width: 80%;
+        }
+      
+        ::placeholder {
+          font-size: 0.8rem;
+        }
+        .message .message-text {
+          padding: 0px;
+          /* flex-basis: 50%; */
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .message {
+          flex-direction: column;
+        }
+      }
+      
