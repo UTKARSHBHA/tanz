@@ -400,6 +400,10 @@ header {
 .mybox {
   border-bottom: 1px solid #ff7b00;
 }
+.myhide{
+  
+  display:none !important;
+}
 /* Gallary started */
 
 .gallary {

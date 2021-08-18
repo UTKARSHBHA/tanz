@@ -36,7 +36,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     body{
       margin: 0;
       padding: 0;
@@ -44,9 +44,7 @@
     .about-section {
       padding: 0;
     }
-    .myContainer {
-      margin: 0;
-    }
+   
     .inner-container {
       padding: 60px;
     }
@@ -65,6 +63,17 @@
     #heading{
       padding-top: 19rem;
       margin: 0 10%;
+    }
+
+    .myshow{
+      display: none !important;
+
+    }
+    .myhide{
+      display: flex !important;
+    }
+    .cont{
+      margin-right: 6rem;
     }
   }
 
