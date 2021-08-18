@@ -127,11 +127,7 @@ font-family: Lora, sans-serif;
   transition: 0.3s;
   padding: 0 10%;
 }
-@media screen and (max-width: 750px) {
-  .menu {
-    display: block;
-  }
-}
+
 .menu-nav {
   display: flex;
   flex-wrap: wrap;
@@ -140,11 +136,7 @@ font-family: Lora, sans-serif;
   text-align: center;
   list-style-type: none;
 }
-@media screen and (max-width: 750px) {
-  .menu-nav {
-    flex-direction: column;
-  }
-}
+
 .menu-nav-item {
   flex: 1;
 }
@@ -200,23 +192,14 @@ font-family: Lora, sans-serif;
   /* object-fit: contain; */
   flex-wrap: wrap;
 }
-@media screen and (max-width: 750px) {
-  .menu .images {
-    justify-content: center;
-  }
-}
+
 .menu .images .image-link {
   width: 15vw;
   /* height: 15vw; */
   margin: 12px;
   overflow: hidden;
 }
-@media screen and (max-width: 750px) {
-  .menu .images .image-link {
-    width: 40vw;
-    margin: 0 12px 12px 0;
-  }
-}
+
 .menu .images .image-link .image {
   position: relative;
   transition: 0.6s;
@@ -348,33 +331,7 @@ header {
   font-size: 13px;
 }
 
-@media screen and (max-width: 1200px) {
-  .inner-container {
-    padding: 80px;
-  }
-}
 
-@media screen and (max-width: 1000px) {
-  .about-section {
-    background-size: 100%;
-    padding: 100px 40px;
-  }
-  .inner-container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about-section {
-    padding: 0;
-  }
-  .myContainer {
-    margin: 0;
-  }
-  .inner-container {
-    padding: 60px;
-  }
-}
 
 /* course section */
 #courses {
@@ -505,22 +462,7 @@ header {
   margin-top: 1rem;
 }
 
-@media (max-width: 1100px) {
-  .gallary .modal .previous,
-  .gallary .modal .next {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
-  .gallary {
-    padding: 0;
-  }
-  .gallary .modal .modal-content {
-    width: 96%;
-    height: auto;
-    margin-top: 2rem;
-  }
-}
+
 .secondaryHeader {
   font-size: 3.5rem;
   /* margin: 4rem 0; */
@@ -921,14 +863,4 @@ i {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 500px){
-  html{
-      font-size: 50%;
-  }
-}    
-
-@media(min-width: 501px) and (max-width: 768px){
-  html{
-  font-size: 50%;
-  }
-}    
+ 
