@@ -60,9 +60,7 @@
   header {
     flex-direction: column;
   }
-  #courses img {
-    border: 6px solid white;
-  }
+  
 
   #pic {
     width: 50vw;
@@ -73,15 +71,32 @@
     margin: 0 10%;
   }
 
-  .myshow {
+  /* .myshow {
     display: none !important;
-  }
-  .myhide {
-    display: flex !important;
-  }
-  .cont {
-    margin-right: 3rem;
-  }
+  } */
+  .cont-rev{
+    flex-direction: row;
+}
+.cont{
+  flex-direction: column;
+}
+.sam{
+  margin: 0 auto;
+}
+.cont img{
+ 
+    width:60vw;
+    border: 8px solid white;
+    border-radius: 33px;
+    
+}
+.inn{
+    border:1px solid white;
+    width:100%;
+    margin:4%;
+    padding: 8%;
+    
+}
 }
 
 @media (max-width: 1100px) {
