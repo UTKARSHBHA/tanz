@@ -389,12 +389,12 @@ header {
 }
 .cont {
   margin-left: 50px;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid white;
 }
 .cont-right {
   margin-right: 50px;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid white;
 }
 .mybox {
@@ -491,15 +491,7 @@ header {
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-  #cont {
-    margin-right: 45px;
-  }
-  #cont-right {
-    margin-left: 50px;
-    margin-bottom: 50px;
-  }
-}
+
 
 /* contact us */
 
