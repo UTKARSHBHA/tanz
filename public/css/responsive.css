@@ -65,8 +65,8 @@
   }
 
   #pic {
-    width: 50vw;
-    height: 50vh;
+    width: 60vw;
+    /* height: 50vh; */
   }
   #heading {
     padding-top: 19rem;

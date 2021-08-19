@@ -310,6 +310,9 @@ header {
   margin-left: 100px; */
 /* width: 50%; */
 /* } */
+#pic {
+  width: 100%;
+}
 .header-pic {
   flex: 1;
   /* width: 50%; */
